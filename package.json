@@ -32,6 +32,7 @@
     "lint:fix": "eslint ./ --ignore-path .formatignore --fix",
     "prettier": "prettier --write \"./**/*.{js,jsx,ts,tsx,css,md,json,scss}\" --config .prettierrc --ignore-path .formatignore",
     "format": "npm run prettier && npm run lint:fix",
+    "deploy": "npm run publish",
     "publish": "npm run format && npm run build"
   },
   "browserslist": {
