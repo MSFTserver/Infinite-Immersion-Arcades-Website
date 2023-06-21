@@ -29,8 +29,6 @@ function NavBar(props) {
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarToggler"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
               aria-controls="navbarToggler"
               aria-expanded="false"
               aria-label="Toggle navigation"
