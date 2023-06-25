@@ -82,23 +82,6 @@ function App() {
                       >
                         - 2023 -
                       </Link>
-                      <div className="Socials">
-                        <Link href="mailto:contact@iiarcades.com">
-                          <i className="fa-solid fa-square-envelope fa-fw fa-2x"></i>
-                        </Link>
-                        <Link href="https://twitter.com/IIArcades">
-                          <i className="fa-brands fa-square-twitter fa-fw fa-2x"></i>
-                        </Link>
-                        <Link href="https://instagram.com/IIArcades">
-                          <i className="fa-brands fa-square-instagram fa-fw fa-2x"></i>
-                        </Link>
-                        <Link href="https://www.facebook.com/people/Infinite-Immersion-Arcades/100093241084884/">
-                          <i className="fa-brands fa-square-facebook fa-fw fa-2x"></i>
-                        </Link>
-                        <Link href="https://linkedin.com/company/IIArcades">
-                          <i className="fa-brands fa-linkedin fa-fw fa-2x"></i>
-                        </Link>
-                      </div>
                     </div>
                   </Footer>
                 </div>

@@ -55,20 +55,20 @@ export default {
   typography: {
     lineHeight: 1.7,
     headerSizes: {
-      h1: 28,
-      h2: 24,
-      h3: 21,
-      h4: 18,
-      h5: 16,
-      h6: 16,
+      h1: 30,
+      h2: 26,
+      h3: 23,
+      h4: 20,
+      h5: 18,
+      h6: 18,
     },
-    fontSize: 16,
+    fontSize: 18,
     headerFontFamily: '"Space Ranger Expanded Italic", "sans-serif"',
     fontFamily: '"Orbitron", "sans-serif"',
   },
 
   code: {
-    fontSize: 14,
+    fontSize: 18,
     fontFamily:
       'Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace',
     background: colors.black,
@@ -90,7 +90,7 @@ export default {
   // After `large` one it is `xlarge`.
   responsive: {
     small: 600,
-    medium: 992,
+    medium: 768,
     large: 1200,
   },
 }

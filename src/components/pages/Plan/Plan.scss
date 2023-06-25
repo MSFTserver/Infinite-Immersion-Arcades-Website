@@ -1,61 +1,41 @@
 .Plan {
+  overflow: hidden;
   .PlanBox {
-    height: 80vh;
     overflow: hidden auto;
-    width: 50vw;
     margin: auto;
     scrollbar-color: aqua indigo;
   }
 
   .PlanContents {
-    border-radius: 2em;
-    padding: 1em;
-    padding-left: 2em;
-    margin: 1em;
-  }
-
-  .PlanWords {
-    display: block;
+    margin: 1em auto;
+    height: 80vh;
+    width: 70vw;
   }
 
   .h1 {
+    text-align: center;
     width: fit-content;
-    margin: auto;
+    margin: 50px auto;
   }
 
   .titleText {
-    padding: 10px;
+    padding: 0 10px;
+    font-size: 50px;
   }
 
-  @media only screen and (max-width: 700px) {
-    padding: 10px;
-    height: 68vh;
-    font-size: 12px;
+  .arwes-framed-text {
+    padding: 16px;
+  }
 
-    .linkContents {
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+
+    .PlanContents {
+      height: 90vh;
+      width: 95vw;
       border-radius: 0;
       padding: 0;
       margin: 10px 0 0 0;
-      font-size: 12px;
-    }
-    .code {
-      white-space: break-spaces;
-    }
-    .PlanWords,
-    .code {
-      font-size: 12px;
-    }
-    .h4 {
-      font-size: 14px;
-    }
-    .h3 {
-      font-size: 16px;
-    }
-    .h2 {
-      font-size: 18px;
-    }
-    .h1 {
-      font-size: 20px;
     }
   }
 }

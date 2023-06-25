@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkinfiniteimmersionarcades=self.webpackChunkinfiniteimmersionarcades||[]).push([[745],{2745:function(e,i,n){n.r(i);n(2791);var s=n(9378),r=n(184);i.default=function(e){return(0,r.jsx)(s.X6,{node:"h1",children:(0,r.jsx)(s.Ee,{animate:!0,resources:"/logo-2.gif",children:(0,r.jsx)("div",{className:"h5",children:" The Next Step in Virtual Reality Arcades! "})})})}}}]);
+//# sourceMappingURL=745.398610af.chunk.js.map

@@ -1,23 +1,22 @@
 /* eslint-disable react/prefer-stateless-function */
 import './HomePage.scss'
-import React from 'react'
-import { Frame, Heading, Words, Link, Line, Image } from 'arwes'
+import React, { Suspense } from 'react'
+import { Frame, Heading, Words, Line, Image } from 'arwes'
+
+const HeaderImage = React.lazy(() =>
+  import('../../shared/HeaderImage/HeaderImage'),
+)
 
 function HomePage(props) {
   return (
     <div className="HomePage">
-      <div className="homePageBox">
-        <div className="homePageContents">
-          <Heading
-            node="h1"
-            style={{ margin: '0 auto', padding: 10, maxWidth: 700 }}
-          >
-            <Image animate resources="/logo-2.gif">
-              <div className="h5">
-                The Next Step in Virtual Reality Arcades!
-              </div>
-            </Image>
-          </Heading>
+      <div className="HomePageBox">
+        <div className="HomePageContents">
+          <div style={{ margin: '0 auto', padding: 20, maxWidth: 678 }}>
+            <Suspense fallback={<div>loading...</div>}>
+              <HeaderImage />
+            </Suspense>
+          </div>
           <Line animate />
           <Heading node="h1">
             <div className="h1">
@@ -32,35 +31,44 @@ function HomePage(props) {
               </Frame>
             </div>
           </Heading>
-          <Frame
-            animate
-            level={3}
-            corners={3}
-            layer="header"
-            show={props.anim.entered}
-          >
-            <p>
-              <Words
-                animate
-                show={props.anim.entered}
-                style={{ padding: '20px' }}
-              >
-                multi-experience VR arcade, themed around sci-fi cyberpunk
-                styles, The arcade will feature various VR experiences,
-                including VR free roam arenas for multiplayer events, with
-                additional VR activities in private rooms, standing rooms, party
-                rooms, VR racing simulators, and an internet café with VR ready
-                gaming desktop setups. The arcade aims to provide an immersive
-                and high-quality VR gaming experience to customers.
-                Additionally, the business will leverage the EVA franchising
-                model to ensure consistency and operational support across
-                multiple locations. We will host regular events like PvP
-                tournaments and themed gaming with experiences like zombie
-                nights, military shooters, sports days, educational events and
-                corporate events.
-              </Words>
-            </p>
-          </Frame>
+          <div className="arwes-framed-text">
+            <Frame
+              animate
+              level={3}
+              corners={3}
+              layer="header"
+              show={props.anim.entered}
+            >
+              <p>
+                <Words
+                  animate
+                  show={props.anim.entered}
+                  style={{ padding: '20px' }}
+                >
+                  A multi-experience VR arcade themed around sci-fi cyberpunk
+                  styles. The arcade will feature various VR experiences,
+                  including VR free-roam for multiplayer events, with additional
+                  VR activities in private rooms, standing rooms, party rooms,
+                  VR racing simulators, VR entertainment motion Simulators, 7D
+                  cinema, and a cyber café with VR-ready desktop setups. The
+                  arcade aims to provide customers with an immersive and
+                  high-quality VR gaming experience. We will host regular events
+                  like PvP tournaments and themed gaming with experiences like
+                  zombie nights, military shooters, and sports days. The center
+                  will also include spaces and offerings for schools to educate
+                  in an immersive environment and businesses to suit corporate
+                  needs, such as safety and training simulator companies and
+                  what they will provide. For free roam arenas, we will use EVA
+                  and ZerolatencyVR, specialty and unique offerings from
+                  VirtuixOmni, MajorMega, LekeVRmetaverse, and FuninVR. Standing
+                  and Escape room providers are SpringboardVR and VRcave. Also
+                  including Educational tools and software from Talon
+                  Simulations, InspiritVR, and ForgeFX. We will have a full bar
+                  and restaurant to keep guests longer and charged up.
+                </Words>
+              </p>
+            </Frame>
+          </div>
         </div>
       </div>
     </div>
