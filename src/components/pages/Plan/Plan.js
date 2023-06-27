@@ -1,13 +1,12 @@
 /* eslint-disable react/prefer-stateless-function */
-import './Plan.scss'
 import React from 'react'
-import { Frame, Heading, Words, Link, Line, Code } from 'arwes'
+import { Frame, Heading, Words } from 'arwes'
 
 function Plan(props) {
   return (
-    <div className="Plan">
-      <div className="PlanBox">
-        <div className="PlanContents">
+    <div className="Page">
+      <div className="PageBox">
+        <div className="PageContents">
           <div className="h1">
             <Frame
               animate
@@ -41,11 +40,12 @@ function Plan(props) {
                   culture, including educational tools for schools and
                   businesses. It will feature VR free-roam arenas provided by
                   EVA, allowing up to 10 players to participate in the After-H
-                  battle arena game with up to 8 players for After-H zombies and
-                  After-H Legend of Mars. We chose EVA as they provide the
-                  largest free-roam venues at 5600 square feet. Arenas with HTC
-                  Vive Focus 3 headsets and VR-ready HP Omen desktops with the
-                  latest hardware also allow wireless play with the new wifi
+                  battle arena game or with up to 8 players in one of the two
+                  other games they offer, After-H zombies and After-H Legend of
+                  Mars. We chose EVA as they provide the largest free-roam
+                  venues at 5600 square feet. Arenas with HTC Vive Focus 3
+                  headsets and VR-ready HP Omen desktops with the latest
+                  hardware also allow wireless play with the new wifi
                   capabilities. This new technology helps our focus to eliminate
                   backpacks and wires that can add restrictions to users and
                   draw away from the immersive experience. We would also look at
@@ -68,7 +68,7 @@ function Plan(props) {
                   show={props.anim.entered}
                   style={{ padding: '20px' }}
                 >
-                  The establishment will also include private, medium, Large,
+                  The establishment will also include private, medium, large,
                   and Party rooms to accommodate various group sizes and
                   preferences for VR gaming. Each person has roughly 7 feet of
                   space in rooms with multiple stations to move around inside,
@@ -101,7 +101,7 @@ function Plan(props) {
                   freely without boundaries using their unique treadmill system.
                   They also feature a $100,000 prize pool in ongoing weekly and
                   monthly esports contests which will drive repeated customers.
-                  We will also feature the Hyperdeck from MajorMega, featuring a
+                  We will also feature the Hyperdeck from MajorMega, with a
                   full-motion floor allowing players to pitch, roll and rumble
                   for an immersive experience without motion sickness. Thanks to
                   multi-sensory effects and heat and hurricane simulations,
@@ -109,7 +109,7 @@ function Plan(props) {
                   join in, dropping perks to help players or triggering
                   explosions to increase the challenge. While guests have some
                   time to spare waiting around for their next session, they can
-                  hop into a short 5-minute game in the Hologate arena by
+                  hop into a short 5-10 minute game in the Hologate arena by
                   themselves or with up to 3 other friends for a multiplayer
                   experience. With the Hologate Arena, players are transported
                   into the immersive virtual reality world, where they will
@@ -202,11 +202,21 @@ function Plan(props) {
                   show={props.anim.entered}
                   style={{ padding: '20px' }}
                 >
-                  We would also like to offer a cyber café with VR-ready seated
-                  gaming desktop setups to provide diverse options for VR
-                  enthusiasts, gamers, creators, and developers. Using the Senet
-                  management platform, We would offer various popular titles
-                  that are free to play.
+                  To provide diverse options for VR enthusiasts, gamers,
+                  creators, and developers, a cyber café with VR-ready seated
+                  gaming desktop setups inside a soundproofed room. Using the
+                  Senet management platform, We would offer various popular
+                  titles like GTA V, Battlefield 2042, Rainbow Six: Siege, FIFA
+                  20, and more free-to-play under our license sharing if users
+                  do not own the titles. Also, users can log into their accounts
+                  and access their games. For headsets, we would offer a ranger
+                  for gamers and developers, including HTC, Quests, and Pico, as
+                  examples of the most popular companies. On top of that, we
+                  will also have joysticks for flying games like War Thunder. We
+                  would have preloaded apps like Blender, Unity, and Unreal
+                  Engine to cater to developers. If gamers or developers don't
+                  see something they want, they can always request a certain app
+                  to be loaded and ready when they come in.
                 </Words>
                 <Words
                   animate

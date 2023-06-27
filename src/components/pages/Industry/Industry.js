@@ -1,13 +1,12 @@
 /* eslint-disable react/prefer-stateless-function */
-import './Industry.scss'
 import React from 'react'
-import { Frame, Heading, Words, List, Line, Code } from 'arwes'
+import { Frame, Heading, Words, List, Line } from 'arwes'
 
 function Industry(props) {
   return (
-    <div className="Industry">
-      <div className="IndustryBox">
-        <div className="IndustryContents">
+    <div className="Page">
+      <div className="PageBox">
+        <div className="PageContents">
           <Heading node="h1">
             <div className="h1" style={{ textAlign: 'center' }}>
               <Frame
@@ -85,18 +84,20 @@ function Industry(props) {
                   style={{ padding: '20px' }}
                 >
                   The VR industry is experiencing significant growth and
-                  presents compelling opportunity for businesses. Virtual
+                  presents a compelling opportunity for businesses. Virtual
                   reality has gained popularity across various sectors,
                   including gaming, entertainment, training, and education.
                   According to market research, the global virtual reality
                   market was valued at $15.81 billion in 2020 and is projected
                   to reach $62.1 billion by 2027, growing at a CAGR of 21.6%
-                  from 2021 to 2027. The increasing adoption of VR technology,
-                  advancements in VR hardware and software, and rising consumer
-                  interest in immersive experiences are key drivers of this
-                  growth. Additionally, VR arcades provide a unique opportunity
-                  for people to access high-end VR equipment and experiences
-                  that may not be readily available at home.
+                  from 2021 to 2027.
+                  <br></br>
+                  The increasing adoption of VR technology, advancements in VR
+                  hardware and software, and rising consumer interest in
+                  immersive experiences are key drivers of this growth.
+                  Additionally, VR arcades provide a unique opportunity for
+                  people to access high-end VR equipment and experiences that
+                  may not be readily available at home.
                 </Words>
               </p>
             </Frame>
@@ -128,11 +129,11 @@ function Industry(props) {
               show={props.anim.entered}
             >
               <Words style={{ padding: '20px' }}>
-                The target market for the multi-experience VR arcade includes
-                both gamers and non-gamers who are interested in immersive
-                experiences. This includes individuals, groups, corporate teams,
-                and event organizers looking for unique and exciting
-                entertainment and educational options.
+                The multi-experience VR arcade's target market includes gamers
+                and non-gamers interested in immersive experiences. This
+                includes individuals, groups, corporate teams, and event
+                organizers looking for unique and exciting entertainment and
+                educational options.
               </Words>
               <Line animate />
               <Words style={{ padding: '20px' }}>
@@ -288,9 +289,9 @@ function Industry(props) {
                 <Words style={{ padding: '20px' }}>
                   <li>
                     <p style={{ textDecoration: 'underline' }}>Unique Theme:</p>
-                    Infinite Immersion Arcades' sci-fi themeing can
-                    differentiate itself from competitors and attract customers
-                    who are interested in futuristic experiences.
+                    Infinite Immersion Arcades' sci-fi theming can differentiate
+                    itself from competitors and attract customers interested in
+                    futuristic experiences.
                   </li>
                 </Words>
                 <Words style={{ padding: '20px' }}>
@@ -298,9 +299,9 @@ function Industry(props) {
                     <p style={{ textDecoration: 'underline' }}>
                       Large-Scale Free Roam:
                     </p>
-                    The availability of spacious free-roam areas can provide
-                    customers with a sense of freedom and immersion that is
-                    difficult to achieve at home.
+                    The availability of spacious free-roam areas can give
+                    customers a sense of freedom and immersion that is difficult
+                    to achieve at home.
                   </li>
                 </Words>
                 <Words style={{ padding: '20px' }}>
@@ -308,7 +309,7 @@ function Industry(props) {
                     <p style={{ textDecoration: 'underline' }}>
                       Additional Services:
                     </p>
-                    The inclusion of a full bar and restaurant can create a
+                    Including a full bar and restaurant can create a
                     comprehensive entertainment experience, encouraging
                     customers to spend more time and money at the arcade.
                   </li>
@@ -396,8 +397,8 @@ function Industry(props) {
                   themeing, and provide excellent customer service. Continuous
                   innovation, effective marketing strategies, and staying ahead
                   of market trends will be vital in capturing a significant
-                  share of the market and achieving long-term success in the VR
-                  arcade industry.
+                  market share and achieving long-term success in the VR arcade
+                  industry.
                 </Words>
               </p>
             </Frame>

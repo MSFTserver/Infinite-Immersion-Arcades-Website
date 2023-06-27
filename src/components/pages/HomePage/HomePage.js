@@ -1,7 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
-import './HomePage.scss'
 import React, { Suspense } from 'react'
-import { Frame, Heading, Words, Line, Image } from 'arwes'
+import { Frame, Heading, Words, Line } from 'arwes'
 
 const HeaderImage = React.lazy(() =>
   import('../../shared/HeaderImage/HeaderImage'),
@@ -9,9 +8,9 @@ const HeaderImage = React.lazy(() =>
 
 function HomePage(props) {
   return (
-    <div className="HomePage">
-      <div className="HomePageBox">
-        <div className="HomePageContents">
+    <div className="Page">
+      <div className="PageBox">
+        <div className="PageContents">
           <div style={{ margin: '0 auto', padding: 20, maxWidth: 678 }}>
             <Suspense fallback={<div>loading...</div>}>
               <HeaderImage />

@@ -1,6 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
-import React, { Suspense } from 'react'
-import { Frame, Heading, Words, Line, Image } from 'arwes'
+import React from 'react'
+import { Heading, Image } from 'arwes'
 
 function HeaderImage(props) {
   return (

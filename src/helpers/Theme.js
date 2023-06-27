@@ -55,20 +55,20 @@ export default {
   typography: {
     lineHeight: 1.7,
     headerSizes: {
-      h1: 30,
-      h2: 26,
-      h3: 23,
-      h4: 20,
-      h5: 18,
-      h6: 18,
+      h1: 50,
+      h2: 32,
+      h3: 20,
+      h4: 18,
+      h5: 16,
+      h6: 16,
     },
-    fontSize: 18,
+    fontSize: 16,
     headerFontFamily: '"Space Ranger Expanded Italic", "sans-serif"',
     fontFamily: '"Orbitron", "sans-serif"',
   },
 
   code: {
-    fontSize: 18,
+    fontSize: 16,
     fontFamily:
       'Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace',
     background: colors.black,

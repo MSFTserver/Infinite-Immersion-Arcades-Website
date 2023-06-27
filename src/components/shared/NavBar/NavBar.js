@@ -2,8 +2,8 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable react/prefer-stateless-function */
 import './NavBar.scss'
-import React, { useState } from 'react'
-import { Button, Header, Heading, Row, Words, Link as Link2 } from 'arwes'
+import React from 'react'
+import { Button, Header, Heading, Words, Link as Link2 } from 'arwes'
 import { Link, useLocation } from 'react-router-dom'
 import PropTypes from 'prop-types'
 

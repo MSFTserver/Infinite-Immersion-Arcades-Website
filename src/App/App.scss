@@ -24,3 +24,50 @@
     }
   }
 }
+
+.Page {
+  overflow: hidden;
+  .PageBox {
+    overflow: hidden auto;
+    margin: auto;
+    scrollbar-color: aqua indigo;
+  }
+
+  .PageContents {
+    margin: 1em auto;
+    height: 80vh;
+    width: 70vw;
+  }
+
+  .h1 {
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto;
+  }
+
+  .titleText {
+    padding: 0 10px;
+    font-size: 50px;
+  }
+
+  .arwes-framed-text {
+    padding: 16px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+
+    .PageContents {
+      height: 90vh;
+      width: 95vw;
+      border-radius: 0;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }
+
+    .titleText {
+      padding: 0 10px;
+      font-size: 35px;
+    }
+  }
+}
