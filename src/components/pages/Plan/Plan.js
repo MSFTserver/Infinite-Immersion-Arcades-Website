@@ -143,10 +143,9 @@ function Plan(props) {
                   mech suit platform with forty games and over sixty 5D
                   experiences, two-seater Space-time Shuttle featuring
                   720-degree rotation with three experiences. Lastly, they will
-                  provide a 3/5/7D cinema with eleven special effects, over
-                  seventy 5D games, and eight 7D experiences with configurable
-                  capacity. We are looking at three rows and three columns for
-                  nine seats.
+                  provide a 3/5D cinema with eleven special effects and over
+                  seventy 5D games with configurable capacity. We are looking at
+                  three rows and three columns for nine seats.
                 </Words>
                 <Words
                   animate
@@ -215,8 +214,8 @@ function Plan(props) {
                   will also have joysticks for flying games like War Thunder. We
                   would have preloaded apps like Blender, Unity, and Unreal
                   Engine to cater to developers. If gamers or developers don't
-                  see something they want, they can always request a certain app
-                  to be loaded and ready when they come in.
+                  see something they want, they can always request a particular
+                  app to be loaded and ready when they come in.
                 </Words>
                 <Words
                   animate

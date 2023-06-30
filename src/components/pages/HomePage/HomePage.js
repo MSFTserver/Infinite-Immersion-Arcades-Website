@@ -1,6 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Suspense } from 'react'
-import { Frame, Heading, Words, Line } from 'arwes'
+import { Frame, Heading, Words, Line, Button, Link } from 'arwes'
 
 const HeaderImage = React.lazy(() =>
   import('../../shared/HeaderImage/HeaderImage'),
@@ -48,24 +48,39 @@ function HomePage(props) {
                   styles. The arcade will feature various VR experiences,
                   including VR free-roam for multiplayer events, with additional
                   VR activities in private rooms, standing rooms, party rooms,
-                  VR racing simulators, VR entertainment motion Simulators, 7D
+                  VR racing simulators, VR entertainment motion Simulators, 5D
                   cinema, and a cyber café with VR-ready desktop setups. The
                   arcade aims to provide customers with an immersive and
                   high-quality VR gaming experience. We will host regular events
-                  like PvP tournaments and themed gaming with experiences like
+                  like PvP tournaments and themed gaming with occasions like
                   zombie nights, military shooters, and sports days. The center
                   will also include spaces and offerings for schools to educate
                   in an immersive environment and businesses to suit corporate
                   needs, such as safety and training simulator companies and
-                  what they will provide. For free roam arenas, we will use EVA
-                  and ZerolatencyVR, specialty and unique offerings from
-                  VirtuixOmni, MajorMega, LekeVRmetaverse, and FuninVR. Standing
-                  and Escape room providers are SpringboardVR and VRcave. Also
-                  including Educational tools and software from Talon
-                  Simulations, InspiritVR, and ForgeFX. We will have a full bar
-                  and restaurant to keep guests longer and charged up.
+                  what they will provide. We will use EVA and ZerolatencyVR for
+                  free roam arenas, specialty and unique offerings from
+                  VirtuixOmni, MajorMega, Hologate, LekeVRmetaverse, and
+                  FuninVR. Standing and Escape room providers are SpringboardVR
+                  and VRcave. We also include Educational tools and software
+                  from Talon Simulations, InspiritVR, and ForgeFX. We will have
+                  a full bar and restaurant to keep guests longer and charged
+                  up.
                 </Words>
               </p>
+              <div className="cta-button">
+                <Button animate layer="control">
+                  <Link href="/plan">
+                    <Words show={props.anim.entered} layer="header">
+                      <h5>Read Our full Plan</h5>
+                    </Words>
+                    <br></br>
+                    <Words show={props.anim.entered} layer="header">
+                      <h5 style={{ marginBottom: 0 }}>Click Here!</h5>
+                    </Words>
+                  </Link>
+                </Button>
+              </div>
+              <br></br>
             </Frame>
           </div>
         </div>

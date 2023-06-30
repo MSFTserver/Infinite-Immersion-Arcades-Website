@@ -22,7 +22,7 @@ export default {
   shadowLength: 4,
 
   // Base animation duration in ms.
-  animTime: 700,
+  animTime: 950,
 
   // The opacity to apply to elements when needed.
   alpha: 1,
@@ -80,6 +80,10 @@ export default {
     variable: colors.butterflyBlue,
     selector: colors.butterflyBlue,
     value: colors.caribbeanGreen,
+  },
+
+  table: {
+    fontSize: 16,
   },
 
   // Number of columns inside a row

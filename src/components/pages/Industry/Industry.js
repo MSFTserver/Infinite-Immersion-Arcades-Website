@@ -1,6 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react'
-import { Frame, Heading, Words, List, Line } from 'arwes'
+import { Frame, Heading, Words, List, Line, Table } from 'arwes'
 
 function Industry(props) {
   return (
@@ -91,7 +91,12 @@ function Industry(props) {
                   market was valued at $15.81 billion in 2020 and is projected
                   to reach $62.1 billion by 2027, growing at a CAGR of 21.6%
                   from 2021 to 2027.
-                  <br></br>
+                </Words>
+                <Words
+                  animate
+                  show={props.anim.entered}
+                  style={{ padding: '20px' }}
+                >
                   The increasing adoption of VR technology, advancements in VR
                   hardware and software, and rising consumer interest in
                   immersive experiences are key drivers of this growth.
@@ -212,12 +217,86 @@ function Industry(props) {
                   </li>
                 </List>
               </Words>
+              <Table
+                className="custom-table"
+                animate
+                headers={[
+                  'Business',
+                  'Venue Type',
+                  'Players',
+                  '$ per Person',
+                  'Game Time',
+                ]}
+                dataset={[
+                  ['Sandbox VR', '', '', '', ''],
+                  ['', 'Free roam', '6', '50', '30 minutes'],
+                  ['Zion VR', '', '', '', ''],
+                  ['', 'Escape room adventure', '2-6', '40', '1 hour'],
+                  ['', 'Escape free roam', '3-6', '45', '1 hour'],
+                  ['', 'Free roam zombies', '2', '50', '1 hour'],
+                  ['', '', '3-4', '45', '1 hour'],
+                  ['', 'Free roam multiplayer', '3', '45', '1 hour'],
+                  ['', '', '4-6', '40', '1 hour'],
+                  ['', 'Free roam 25 minute', '1', '30', '25 minutes'],
+                  ['', 'Free roam lasertag', '4-6', '37', '30 minutes'],
+                  ['', 'Arcade', '1', '40', '1 hour'],
+                  ['', '', '', '30', '25 minutes'],
+                  ['Diablo Escape', '', '', '', ''],
+                  ['', 'Escape room', '2-6', '33-44', '20 minutes - 1 hour'],
+                  ['Zscape', '', '', '', ''],
+                  ['', 'Escape room', '1-10', '33', '1 hour'],
+                  ['Book Gamery', '', '', '', ''],
+                  ['', 'Arcade & Escape Rooms', '1-5', '60', '1 hour'],
+                  ['', '', '', '10', '+1 hour'],
+                  ['Gameday VR', '', '', '', ''],
+                  ['', 'Escape Room', '1-4', '40', '1 hour'],
+                  ['', 'Arcade', '1', '10', '10 minutes'],
+                  ['', '', '', '25', '30 minutes'],
+                  ['', '', '', '40', '1 hour'],
+                  ['', 'Cinema', '1', '20', '8'],
+                  ['VR We Play', '', '', '', ''],
+                  ['', 'Arcade', '2', '90', '45 minutes'],
+                  ['', '', '3', '135', '45 minutes'],
+                  ['', '', '4', '168', '45 minutes'],
+                  ['', '', '5', '210', '45 minutes'],
+                  ['', '', '6', '228', '45 minutes'],
+                  ['Heroes VR Adventures', '', '', '', ''],
+                  ['', 'Free Roam', '2-4', '50', '45 minutes'],
+                  ['', 'Arcade', '1-6', '50', '1 hour'],
+                  ['', 'Squad Package', '4+', '350', '2 hour'],
+                  ['', 'League Package', '6+', '500', '2 hour'],
+                  ['', 'Avenger Package', '10+', '750', '2 hour'],
+                  ['Hyper Space', '', '', '', ''],
+                  ['', 'Arcade', '1', '15', '15 minutes'],
+                  ['', '', '', '25', '30 minutes'],
+                  ['', '', '', '45', '1 hour'],
+                  ['The Gamery VR', '', '', '', ''],
+                  ['', 'Arcade & Escape Room', '1', '46', '1 hour'],
+                  ['Stockton Extended Realities', '', '', '', ''],
+                  ['', 'Arcade', '1', '46', '2 hour'],
+                  ['Hero Hangout', '', '', '', ''],
+                  ['', 'Arcade Starter Package', '1-4', '20', '30 minutes'],
+                  ['', '', '', '30', '1 hour'],
+                  ['', 'Arcade Premium Package', '1-4', '30', '30 minutes'],
+                  ['', '', '', '40', '1 hour'],
+                  ['The Flyer', '', '', '', ''],
+                  ['', '7d cinema', '1-???', '14', '10 minutes'],
+                  ['Drive Simulations', '', '', '', ''],
+                  ['', 'Racing sim haptic', '1', '25', '30 minutes'],
+                  ['', 'Racing sim no haptic', '1', '20', '30 minutes'],
+                  ['VR Here Now', '', '', '', ''],
+                  ['', '???', '???', '???', '???'],
+                  ['Sector 19', '', '', '', ''],
+                  ['', '???', '???', '???', '???'],
+                ]}
+              />
               <Line animate />
               <Words style={{ padding: '20px' }}>
                 <h3 style={{ textDecoration: 'underline double' }}>
                   Performance of Competitors:
                 </h3>
               </Words>
+              <br></br>
               <Words style={{ padding: '20px' }}>
                 While specific financial data may not be publicly available for
                 all competitors
